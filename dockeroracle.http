@@ -1,6 +1,13 @@
 @dockeroracle_HostAddress = http://localhost:5186
 
-GET {{dockeroracle_HostAddress}}/weatherforecast/
+# Get the weather forecast
+GET {{dockeroracle_HostAddress}}/api/weatherforecast/
+Accept: application/json
+
+###
+
+# Get the weather forecast from oracle
+GET {{dockeroracle_HostAddress}}/api/weather/
 Accept: application/json
 
 ###
