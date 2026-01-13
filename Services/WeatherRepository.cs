@@ -22,8 +22,7 @@ namespace dockeroracle.Services
                     TemperatureC,
                     Summary
                 FROM WeatherForecast
-                ORDER BY ForecastDate
-                ;
+                ORDER BY ForecastDate;
             ";
 
             using var conn = new OracleConnection(ConnStr);
